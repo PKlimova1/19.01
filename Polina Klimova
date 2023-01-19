@@ -1,0 +1,69 @@
+#include<iostream>
+using namespace std;
+
+//int main() {
+//	int i = 0;
+//	do {
+//		cout << i;
+//		cout << "Error" << endl;
+//
+//
+//	} while (i < 15);
+//}
+
+//int main() {
+//	int i = 0;
+//		do { i++;
+//	cout << i << " ";
+//	cout << i * i * i << endl;
+//
+//	
+//	
+//	
+//	
+//	
+//		} while (i < 40);
+//}
+
+//{
+//	string password;
+//	int i = 0;
+//	do {
+//		i++;
+//		cin >> password;
+//
+//	} while (password != "3450"&& i != 3);
+//
+//} 
+////{
+////	//Local variable declaration:
+////	string myname;
+////	//do loop execution
+////	do {
+////		cout << "Enter my name" << endl;
+////		cin >> myname;
+////		if (myname == "no") { cout << "yes!" ; };
+////
+////	} while (myname != "Polina");
+////	return 0;
+////}
+
+
+bool isNumber(string s)
+{
+	for (int i = 0; i < s.length(); i++)
+		if (isdigit(s[i]) == false)
+			return false;
+	return true;
+
+}
+int main() {
+	//Local veriable declaration:
+	string myname;
+	// do loop execution
+	do {
+		cout << "Enter my name" << endl;
+		cin >> myname;
+		if (isNumber(myname)) { cout << "That is a number"; };
+	} while (myname != "Polina");
+}
